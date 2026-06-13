@@ -5,12 +5,12 @@ async function main() {
   const { db } = await import("../src/lib/db");
   const { products } = await import("../src/db/schema");
 
-  console.log("Memulai seeding 1000 data produk dummy...");
+  console.log("Memulai seeding 10000 data produk dummy...");
   
   const dummyProducts = [];
   const categories = ["Elektronik", "Pakaian", "Peralatan Rumah", "Mainan", "Buku"];
   
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 10000; i++) {
     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
     const basePrice = Math.floor(Math.random() * 50000) + 1000;
     
