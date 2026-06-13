@@ -18,6 +18,14 @@ Template Next.js modern yang ringan, mudah di-clone, dan 100% nyaman di Vercel, 
 | Database         | Neon PostgreSQL      |
 | Upload File      | UploadThing          |
 | Error Monitoring | Sentry               |
+| Toast / Notif    | Sonner               |
+
+## Setup Commands
+Jika Anda ingin menambahkan komponen shadcn/ui baru ke dalam proyek, gunakan perintah instalasi berikut:
+```bash
+npx shadcn@latest add button
+# contoh untuk komponen lain: npx shadcn@latest add dialog
+```
 
 ## Data Flow Architecture
 
@@ -65,7 +73,7 @@ src/
 │   │       └── route.ts
 │   │
 │   ├── layout.tsx
-│   ├── loading.tsx
+│   ├── loading.tsx             # Global loading fallback (Spinner)
 │   ├── error.tsx
 │   ├── not-found.tsx
 │   └── globals.css
